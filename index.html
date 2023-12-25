@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нечаевский Арсентий</title>
+    <style>
+        /* Пример стилей для оформления */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f5f5; /* Основной фон */
+        }
+        header {
+            background-color: #0077b6; /* Цвет шапки */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        header:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #49a6e9, #0077b6, #49a6e9); /* Градиент анимации шапки */
+            z-index: -1;
+            animation: gradientAnimation 5s ease infinite;
+        }
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .main {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff; /* Фон основного контента */
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Тень блока */
+        }
+        .main h1 {
+            font-size: 36px;
+            color: #0077b6; /* Цвет заголовка */
+        }
+        .main p {
+            font-size: 18px;
+            color: #333; /* Цвет текста */
+        }
+        .profile-picture {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 20px auto;
+            display: block;
+            /* Добавьте вашу фотографию как фон или используйте <img src="your_image_url" alt="Your Name"> */
+            background-image: url('prof_pic.jpg');
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3); /* Тень фотографии */
+        }
+        footer {
+            background-color: #0077b6; /* Цвет подвала */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Добро пожаловать!</h1>
+    </header>
+
+    <div class="container">
+        <div class="main">
+            <div class="profile-picture"></div>
+            <h1>Меня зовут Нечаевский Арсентий</h1>
+            <p>Я программист 1С</p>
+            <!-- Добавьте сюда свою информацию, контактные данные и другую информацию о себе -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Моя визитка</p>
+    </footer>
+
+</body>
+</html>
